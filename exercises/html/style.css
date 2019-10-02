@@ -1,0 +1,36 @@
+img{
+    height: 300px;
+    padding-right: 30px;
+}
+
+.container{
+    font-family: Georgia;
+    text-align: center;
+}
+.headline{
+    color: darkgreen;
+}
+.image{
+    float: left;
+}
+.paragraph{
+    line-height: 25px;
+    
+}
+
+.list{
+    margin-left: 50px;
+}
+
+.recommended{
+    text-transform: capitalize
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+a:hover{
+    text-decoration: underline;
+}
