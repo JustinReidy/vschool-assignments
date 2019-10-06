@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box; 
+    font-size: 0px;
+    border: white 5px solid;
+}
+
+.container{
+    height: 100px;
+}
+
+.spanOne {
+    display:inline-block;
+    height: 100px;
+    width: 100%;
+    background-color: #F5C6D6;
+}
+
+.spanTwo {
+    display:inline-block;
+    height: 100px;
+    background-color: #EE2E84;
+    width: 25%;
+}
+
+.spanThree {
+    display: inline-block;
+    height: 100px;
+    background-color: #85CFD8;
+    width: 50%;
+}
+.spanFour{
+    display: inline-block;
+    height: 100px;
+    background-color: #8DC63F;
+    width: 75%;
+
+}
+.spanFive{
+    display: inline-block;
+    height: 100px;
+    background-color: #E76E34;
+    width: 25%;
+}
