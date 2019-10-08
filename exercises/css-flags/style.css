@@ -1,0 +1,249 @@
+div{
+    height: 350px;  
+}
+.container{
+    width: 50%;
+    border: 1px black solid;
+    position: relative;
+    margin: auto;
+    margin-bottom: 15px;
+}
+.france1{
+    background-color: blue;
+    position: absolute;
+    width: 33%;
+}
+.france2{
+    
+    background-color: white;
+    position: absolute;
+    width: 33%;
+    top: 0;
+    left: 220px;
+}
+.france3{
+    background-color: red;
+    position: absolute;
+    width: 33%;
+    top: 0;
+    right: 0
+    
+}
+.germany1{
+    background-color: black;
+    height: 33%;
+}
+.germany2{
+    background-color: red;
+    height: 33%;
+
+}
+.germany3{
+    background-color: yellow;
+    height: 33%;
+}
+.madagascar1{
+    background-color: white;
+    width: 30%;
+}
+.madagascar2{
+    background-color: red;
+    height: 50%;
+    width: 70%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.madagascar3{
+    background-color: green;
+    height: 50%;
+    width: 70%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.switzerland1{
+    background-color:red;
+    width: 100%;
+}
+.switzerland2{
+    background-color: white;
+    position: absolute;
+    height: 10%;
+    width: 25%;
+    top: 150px;
+    left: 250px;
+}
+.switzerland3{
+    background-color: white;
+    height: 45%;
+    width: 5%;
+    position: absolute;
+    top: 90px;
+    left: 315px;
+} 
+.sweden1{
+    background-color: #006AA7;
+    height: 100%;
+}
+.sweden2{
+    background-color: yellow;
+    height: 20%;
+    width: 100%;
+    position: absolute;
+    top: 155px;
+}
+.sweden3{
+    background-color: yellow;
+    height: 100%;
+    width: 10%;
+    position: absolute;
+    top: 0;
+    left: 155px;
+}
+.gambia1{
+    background-color: #CE1126;
+    height: 35%;
+}
+.gambia2{
+    background-color: darkblue;
+    height: 22%;
+    border-top: solid white 15px;
+    border-bottom: solid white 15px;
+}
+.gambia3{
+    background-color: darkgreen;
+    height: 35%;
+}
+.tonga1{
+    background-color: red;
+    height: 100%   
+}
+.tonga2{
+    background-color: white;
+    position: absolute;
+    width: 35%;
+    height: 50%;
+    top: 0;
+}
+.tonga3{
+    position: absolute;
+    background-color: red;
+    height: 25%;
+    width: 45%;
+    top: 35%;
+    left: 28%;
+}
+.tonga4{
+    position: absolute; 
+    background-color: red; 
+    height: 62%; 
+    width: 20%; 
+    top: 28px; 
+    left: 95px;
+}
+.japan1{
+    background-color:whitesmoke;
+    height: 100%;
+}
+.japan2{
+    position: absolute;
+    background-color: darkred;
+    border-radius: 100%;
+    width: 20%;
+    height: 40%;
+    top: 100px;
+    left: 270px;
+}
+.greeceBack{
+    background-color: darkblue;
+    height: 11.2%;
+}
+
+.greeceStripes{
+    background-color: white;
+    height: 11%;
+}
+.greeceSquare{
+    position: absolute;
+    background-color: darkblue;
+    height: 55%;
+    width: 30%;
+    top: 0;
+}
+.greeceCross1{
+    position: absolute;
+    background-color: white;
+    height: 11%;
+    width: 30%;
+    top: 77px;
+}
+.greeceCross2{
+    background-color: white;
+    position: absolute;
+    height: 60%;
+    width: 7%;
+    top: 0;
+    left: 70px;
+}
+.niger1{
+    background-color: orangered;
+    position: absolute;
+    height: 28%;
+    top: 0;
+    width: 100%;
+}
+.niger2{
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 33%;
+    top: 116px;
+}
+.niger3{
+    background-color: orangered;
+    position: absolute;
+    height: 35%;
+    border-radius: 100%;
+    width: 25%;
+    top: 115px;
+    left: 240px;
+}
+.niger4{
+    background-color: green;
+    position: absolute;
+    height: 28%;
+    width: 100%;
+    bottom: 0;
+}
+.outer{
+    background-color: darkred;
+
+}
+.inner{
+    background-color: darkgreen;
+    height: 50%;
+    width: 60%;
+    position: absolute;
+    top: 85px;
+    left: 135px
+}
+.whiteCircle{
+    background-color: white;
+    position: absolute;
+    border-radius: 100%;
+    top: 125px;
+    height: 90px;
+    width: 90px;
+    left: 285px;
+}
+.greenCircle{
+    background-color: darkgreen;
+    border-radius: 100%;
+    position: absolute;
+    z-index: 99;
+    height: 100px;
+    width: 100px;
+    top: 120px;
+    left: 304px;
+}
