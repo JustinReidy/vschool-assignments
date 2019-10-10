@@ -4,4 +4,8 @@
 
 let submit = document.submitMe;
 
-console.log(submit)
+submit.addEventListener('click', function(e){
+    e.preventDefault();
+
+    console.log(submit)
+})
