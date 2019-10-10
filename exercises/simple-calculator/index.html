@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>Simple HTML Calculator</title>
+
+        <link rel="stylesheet" href="./styles.css">
+
+    </head>
+
+    <body>
+        
+        <div class="container">
+            <h1>The HTML Calculator</h1>
+            <div class="form">
+
+                <form name="addition">
+                    <input type="number" name="addition1" placeholder="First Number">
+                    <span class='operator'>+</span>
+                    <input type="number" name="addition2" placeholder="Second Number">
+                    <button class="addButton">Add 'Em</button>
+                </form>
+                <h3 class="equalsH3">= <span class="equals" id="additionSum"></span> </h3>
+
+            </div>
+
+            <div class="form">
+
+                <form name="subtraction">
+                    <input type="number" name="subtraction1" placeholder="First Number">
+                    <span class='operator'>-</span>
+                    <input type="number" name="subtraction2" placeholder="Second Number">
+                    <button class="subtractionButton">Subtract 'Em</button>
+                </form>
+                <h3 class="equalsH3">= <span class="equals" id="subtractionSum"></span> </h3>
+
+            </div>
+
+            <div class="form">
+
+                <form name="multiplication">
+                    <input type="number" name="multiplication1" placeholder="First Number">
+                    <span class='operator'>*</span>
+                    <input type="number" name="multiplication2" placeholder="Second Number">
+                    <button class="multiplyButton">Multiply 'Em</button>
+                </form>
+                <h3 class="equalsH3">= <span class="equals" id="multiplicationSum"></span> </h3>
+
+            </div>
+
+        </div>
+
+        <script src="./app.js"></script>
+
+    </body>
+
+</html>

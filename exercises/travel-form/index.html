@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>Travel Form</title>
+
+        <link rel="stylesheet" href="./styles.css">
+
+    </head>
+
+    <body>
+
+        <div class="container">
+            
+            <div class='title'>
+                <img class="logo" src="./vintage-airplane-svgrepo-com (1).svg" alt="airplane">
+                <h1>The Airline</h1>
+            </div>
+            
+            <form name="travelForm">
+                <div class="personal form">
+                    <input class="personInput" type="text" name="firstName" placeholder="First Name"> <br />
+                    <input class="personInput" type="text" name="lastName" placeholder="Last Name"><br />
+                    <input class="personInput" type="number" name="age" placeholder="Age">
+                </div>
+                <hr>
+                <div class="gender form">
+                        <h5>Gender</h5>
+                    <label for="male">Male:</label> 
+                    <input type="radio" name="gender" id="male" value="Male">
+                    <label for="female">Female:</label> 
+                    <input type="radio" name="gender" id="female" value="Female">
+                    <label for="nonBinary">Non-binary:</label> 
+                    <input type="radio" name="gender" id="nonBinary" value="Non-Binary">
+                </div>
+                <hr>
+                <div class="location form">
+                        <h5>Traveling To</h5>
+                    <label for="toronto">Toronto</label>
+                    <input type="checkbox" name="location" id="toronto" value="Toronto">
+                    <label for="london">London</label>
+                    <input type="checkbox" name="location" id="london" value="London">
+                    <label for="newYorkCity">New York City</label>
+                    <input type="checkbox" name="location" id="newYorkCity" value="New York City">
+                </div>
+                <hr>
+                <div class="diet form">
+                    <h5>Diet Restrictions</h5>
+                    <label for="vegetarian">Vegetarian</label>
+                    <input type="checkbox" name="diet" id="vegetarian" value="Vegetarian">
+                    <label for="kosher">Kosher</label>
+                    <input type="checkbox" name="diet" id="kosher" value="Kosher">
+                    <label for="lactoseFree">Lactose Free</label>
+                    <input type="checkbox" name="diet" id="lactoseFree" value="Lactose Free">
+                </div>
+
+                <button class="btn">Submit</button>
+    
+            </form>
+        </div>
+        
+        <script src="./app.js"></script>
+    </body>
+
+</html>

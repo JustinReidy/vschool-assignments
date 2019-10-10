@@ -1,0 +1,42 @@
+h1{
+    text-align: center;
+}
+.title{
+    border-bottom: 1px solid lightgreyb;
+}
+
+.container{
+    text-align: center;
+    border: 1px grey solid;
+    padding: 15px;
+}
+.form{
+    margin-bottom: 10px;
+}
+.personInput{
+    margin-bottom: 5px;
+}
+:hover.personInput{
+    border: 2px solid lightblue;
+}
+
+.personal{
+    display: inline-block;
+}
+
+.btn{
+    border-radius: 10%;
+    background-color: #117AE5;
+    color: lightgrey;
+}
+
+:hover.btn{
+    background-color: darkblue;
+    color: white;
+}
+.logo{
+    
+    width: 65px;
+    height: 65px;
+    float: center;
+}

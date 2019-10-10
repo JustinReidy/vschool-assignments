@@ -1,0 +1,60 @@
+input{
+    margin: 5px 5px;
+    padding: 5px 5px;
+}
+
+h1{
+    text-align: center;
+}
+
+.container{
+    border: 1px solid black;
+    border-radius: 15%;
+    width: 65%;
+    margin-left:auto;
+    margin-right:auto;
+    position: relative;
+}
+
+.form{
+    margin-left: 25%;
+}
+
+.operator{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.addButton{
+    background-color: green;
+    border: 1px solid black;
+    border-radius: 15%;
+    padding: 5px 10px;
+    color: white;
+    font-size: 15px;
+}
+
+.subtractionButton{
+    background-color: red;
+    border: 1px solid black;
+    border-radius: 15%;
+    padding: 5px 10px;
+    color: white;
+    font-size: 15px;
+}
+
+.multiplyButton{
+    background-color: blue;
+    border: 1px solid black;
+    border-radius: 15%;
+    padding: 5px 10px;
+    color: white;
+    font-size: 15px;
+}
+
+.equals{
+    padding-left: 5px;
+}
+.equalsH3{
+    text-align: center;
+}
