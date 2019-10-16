@@ -1,0 +1,36 @@
+body{
+    background-image: linear-gradient(to bottom right, rgb(248, 69, 69), rgb(83, 108, 248));
+}
+
+.logo{
+    font-size: 32px;
+}
+
+.baddies{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);;
+}
+
+.card{
+grid-template-rows: 2, 150px;
+}
+
+.cardImg{
+    width: 50%;
+    height: 50%;
+}
+
+.btn{
+   padding: 5px;
+   text-align: center;
+   background-color: red;
+   color: blue;
+   font-size: 24mm;
+}
+
+.footer{
+    
+    text-align: center;
+    font-size: 24px;
+    padding-bottom: 1px;
+}
