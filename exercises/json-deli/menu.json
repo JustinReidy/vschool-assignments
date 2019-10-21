@@ -1,0 +1,60 @@
+{
+	"appetizers": [{
+		"name": "Chicken Salad",
+		"ingredients": ["Chicken", "Ranch", "Salad"],
+		"description": "A chicken salad with ranch"
+	}, {
+		"name": "Soy Bean Salad",
+		"ingredients": ["Soy Beans", "Olive Oil", "Salad"],
+		"description": "Somthing vegan you fucking losers"
+	}],
+	"cold sandwiches": [{
+			"name": "BLT",
+			"ingredients": ["Bacon", "Lettuce", "Tomato", "Mayo", "Bread"],
+			"description": "Bacon Sandwhich with Lettuce, and tomato"
+
+		}, {
+			"name": "PB&J",
+			"ingredients": ["Peanut Butter", "Jelly", "Bread"],
+			"description": "Just like ya mama use to make, but we ain't cutten off the crust for you"
+
+		}
+
+	],
+	"hot sandwiches": [{
+			"name": "Meatball Sub",
+			"ingredients": ["Meatballs", "Bread", "Tomato Sauce"],
+			"description": "A sub with meatballs"
+
+		}, {
+			"name": "Tuna Melt",
+			"ingredients": ["Tuna", "Cheese", "Toast"],
+			"description": "Name says it all, its some tuna with melted cheese"
+
+		}
+
+	],
+	"desserts": [{
+			"name": "Chocolate Pudding",
+			"ingredients": ["Chocolate", "Pudding"],
+			"decription": "Its like the ice cream, but it isnt"
+		},
+
+		{
+			"name": "Chocolate Ice Cream",
+			"ingredients": ["Chocolate", "Ice", "Cream"],
+			"decription": "Its like the pudding, but it isnt"
+		}
+	],
+	"drinks": [{
+			"name": "Dr. Pepper",
+			"ingredients": ["21 spices", "water"],
+			"description": "No doctors were harmed in the making of this"
+		}, {
+			"name": "Water",
+			"ingredients": ["water"],
+			"description": "Something else vegan"
+		}
+
+	]
+}

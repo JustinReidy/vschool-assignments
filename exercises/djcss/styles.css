@@ -1,0 +1,71 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 300px);
+    grid-gap: 15px;
+}
+
+.divOne{
+    border: 1px solid black;
+    background-color: blue;
+}
+.divTwo{
+    border: 1px solid black;   
+    background-color: red;
+}
+.divThree{
+    border: 1px solid black;    
+    background-color: Purple;
+}
+.divFour{
+    border: 1px solid black;    
+    background-color: yellow;
+}
+.divFive{
+    border: 1px solid black;    
+    background-color: dodgerblue;
+}
+.divSix{
+    border: 1px solid black;    
+    background-color: green;
+}
+
+
+.divOne:hover{
+    border: 1px solid black;
+    background-color: pink;
+    box-shadow: 5px 5px;
+    transition: all 1s ease-in-out;
+}
+.divTwo:hover{
+    border: 1px solid black;   
+    background-color: pink;
+    box-shadow: 5px 5px;
+    transition: all 1s ease-in-out;
+}
+.divThree:hover{
+    border: 1px solid black;    
+    background-color: pink;
+    box-shadow: 5px 5px;
+    transition: all 1s ease-in-out;
+}
+.divFour:hover{
+    border: 1px solid black;    
+    background-color: pink;
+    box-shadow: 5px 5px;
+    transition: all 1s ease-in-out;
+}
+.divFive:hover{
+    border: 1px solid black;    
+    background-color: purple;
+    border-radius: 100%;
+    box-shadow: 5px 5px;
+    transition: all 1s ease-in-out;
+}
+.divSix:hover{
+    border: 1px solid black;    
+    background-color: pink;
+    
+    box-shadow: 5px 5px;
+    transition: all 1s ease-in-out;
+}
