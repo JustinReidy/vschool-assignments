@@ -86,13 +86,13 @@ function makeStrings(arr){
       }
   ])); 
 
-function makeStrings(arr){
+function makeElements(arr){
     return arr.map(function(obj){
         return `<h1>${obj.name}</h1><h2>${obj.age}</h2>`
     })
   }
   
-  console.log(makeStrings([
+  console.log(makeElements([
       {
           name: "Angelina Jolie",
           age: 80

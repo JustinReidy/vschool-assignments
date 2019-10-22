@@ -8,14 +8,17 @@ axios.get("https://api.vschool.io/justin/todo").then((response) =>{
     }
 })
 
-document.add.addEventListener("submit", (e) => {
+add.addEventListener("submit", (e) => {
     e.preventDefault()
     const newTodo = {
-        title: ""
+        title: add.title.value,
+        description: add.desc.value,
+        price: add.price.value,
+        imgUrl: add.imgUrl.value
     }
 
-    axios.post(url, newTodo).then((response) => {
-        
+    axios.post("https://api.vschool.io/justin/todo", newTodo).then( response => {
+        makeTodo(response.data)
     })
 })
 
@@ -29,7 +32,7 @@ function createTodo(todo){
 
     h1.textContent = todo.title
     p.textContent = todo.description
-    img.src = todo.img
+    img.src = todo.imgUrl
 
     checkbox.type = "checkbox"
     checkbox.checked = todo.completed
@@ -46,4 +49,4 @@ function createTodo(todo){
     list.appendChild(container)
 }
 
-createTodo({title: "get to the store"});
+createTodo();
