@@ -21,6 +21,7 @@ function capitalizeNames(arr){
        
     })
   }
+
   
   console.log(capitalizeNames(["john", "JACOB", "jinGleHeimer", "schmidt"]));
 

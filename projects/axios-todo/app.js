@@ -18,7 +18,7 @@ add.addEventListener("submit", (e) => {
     }
 
     axios.post("https://api.vschool.io/justin/todo", newTodo).then( response => {
-        makeTodo(response.data)
+        createTodo(response.data)
     })
 })
 
@@ -29,13 +29,30 @@ function createTodo(todo){
     const p = document.createElement("p")
     const img = document.createElement("img")
     const checkbox = document.createElement("input")
+    const deleteBtn = document.createElement("button")
 
     h1.textContent = todo.title
     p.textContent = todo.description
     img.src = todo.imgUrl
 
+    deleteBtn.textContent = "delete"
+    
+    deleteBtn.addEventListener("click", e =>{
+        e.preventDefault();
+        axios.delete("https://api.vschool.io/justin/todo/" + todo._id).then(response => {
+            console.log(response)
+            container.remove()
+        })
+    })
+
     checkbox.type = "checkbox"
     checkbox.checked = todo.completed
+
+    checkbox.addEventListener("change", e => {
+        axios.put("https://api.vschool.io/justin/todo/" + todo._id, { completed: e.target.checked }).then(response => {
+            h1.style.textDecoration = response.data.completed ? "line-through": "none"
+        })
+    })
 
     if(todo.completed){
         h1.style.textDecoration = "line-through"
@@ -45,6 +62,7 @@ function createTodo(todo){
     container.appendChild(p)
     container.appendChild(img)
     container.appendChild(checkbox)
+    container.appendChild(deleteBtn)
     console.log(container)
     list.appendChild(container)
 }

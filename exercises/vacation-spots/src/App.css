@@ -1,0 +1,10 @@
+.spot-container {
+  display: grid;
+  grid-template-columns:1fr 1fr ;
+  grid-gap: 10px;
+}
+
+.spot {
+  text-align: center;
+  border: 1px solid black
+}
