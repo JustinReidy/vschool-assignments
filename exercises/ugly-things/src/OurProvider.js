@@ -6,19 +6,36 @@ class OurProvider extends Component {
         super()
 
         this.state = {
-            things: []
+            title: '',
+            desc: '',
+            imgUrl: '',
+            items: []
         }
+    }
+
+    handleChange = e => {
+        this.setState({[e.target.name]: e.target.value})
     }
 
     handleSubmit = e => {
         e.preventDefault()
-        
-        this.setState()
+        let{title, desc, imgUrl} = this.state
+
+        const newItem = {
+            title,
+            desc,
+            imgUrl
+        }
+
+        this.setState(prevState => ({
+            items: [...prevState.items, newItem]
+        }))
+        console.log(this.state.items[0])
     }
 
     render(){
         return(
-            <Provider value={{...this.state, handleSubmit: this.handleSubmit}}>
+            <Provider value={{...this.state, handleSubmit: this.handleSubmit, handleChange: this.handleChange}}>
                 {this.props.children}
             </Provider>
         )

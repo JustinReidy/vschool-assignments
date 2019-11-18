@@ -1,0 +1,55 @@
+import React, {Component} from 'react'
+import axios from 'axios'
+import {withData} from './MyProvider'
+
+import Item from './Item'
+
+class ItemContainer extends Component {
+    constructor(props){
+        super(props)
+
+        this.state = {
+            base: '',
+            date: '',
+            img: '',
+            rates: [],
+            count: 0
+        }
+    }
+
+    
+    
+    componentDidMount() {
+        // console.log(this.props)
+        {this.props.handleAxios()}
+    }
+    
+    // componentDidUpdate() {
+    //     axios.get('https://api.exchangeratesapi.io/latest?base=' + this.props.baseVal).then(res => {
+    //         const rates = []
+    //         for(let key in res.data.rates){
+    //             rates.push({[key]: res.data.rates[key]})    
+    //         }
+    //         this.setState({base: res.data.base, date: res.data.date, rates})
+    //     })
+    //     console.log(this.state.count++)
+    // }
+    
+    
+
+    render() {
+        console.log(this.props.baseVal)
+        const mappedRates = this.props.rates.map(rate => <Item  key={this.props.base + Math.random()} 
+                                                                base={this.props.base} 
+                                                                rate={rate}/>)
+        return (
+            <div className="">
+                <div className="flex flex-wrap ">
+                    {mappedRates}
+                </div>
+            </div>
+        );
+    }
+}
+
+export default withData(ItemContainer);

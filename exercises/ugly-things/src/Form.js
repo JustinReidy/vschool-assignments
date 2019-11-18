@@ -9,15 +9,19 @@ class Form extends Component {
 
         }
     }
-    
+
     render() {
+        let style = {
+            textAlign: 'Center'
+        }
+
         return (
-            <div>
+            <div style={style}>
                 <form onSubmit={this.props.handleSubmit}>
 
-                    <input type="text" name="imgUrl"/>
-                    <input type="text" name="title"/>
-                    <input type="text" name="desc"/>
+                    <input onChange={this.props.handleChange} type="text" name="title"/>
+                    <input onChange={this.props.handleChange} type="text" name="imgUrl"/>
+                    <input onChange={this.props.handleChange} type="text" name="desc"/>
                     <button>Submit</button>
 
                 </form>
