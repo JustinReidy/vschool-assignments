@@ -1,0 +1,48 @@
+.main{
+    display: grid;
+    grid-template-columns: 10px auto auto 100px 10px;
+    background-color: #666666;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+
+.linkGridOne{
+    text-decoration: none;
+    grid-column: 2/3;
+}
+.linkGridTwo{
+    text-decoration: none;
+    grid-column: 3/4;
+    
+}
+.linkTextOne{
+    text-decoration: none;
+    color: white;
+}
+.linkTextOne:hover{
+    text-decoration: underline;
+    color: #4F91D2;
+}
+.linkTextTwo{
+    text-decoration: none;
+    color: white;
+}
+.linkTextTwo:hover{
+    text-decoration: underline;
+    color: #4F91D2;
+}
+
+
+.button{
+    border-radius: 500px;
+    
+}
+.button:hover{
+    background-color: #4F91D2;
+    color: white;
+    cursor: pointer;
+}
