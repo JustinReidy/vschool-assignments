@@ -1,11 +1,8 @@
 import React, {useState} from 'react'
 
 function Ticket(props) {
-    const { problem, company, severity, paid, completed} = props
+    const { id, key, problem, company, severity, paid, completed, handleDelete} = props
     
-    const ticket = {
-        
-    }
     const [paidToggle, setPaidToggle] = useState(paid)
     const [completedToggle, setCompletedToggle] = useState(completed)
 
@@ -23,11 +20,17 @@ function Ticket(props) {
         border: "solid 3px black",
         margin: "6px"
     }
+    const deleteButton = {
+        backgroundColor: "red",
+        color: "white"
+    }
+
+    console.log(id._id)
 
     return(
-        <div style={tickets}>
 
-        { !completedToggle ?
+            <div style={tickets}>
+            { completedToggle ?
                 <>
                     <p><span>Issue: </span>{problem}</p>
                 
@@ -42,11 +45,13 @@ function Ticket(props) {
                         <p  onClick={handlePaidToggle}><span>Paid: </span>Paid</p>
                     }
 
-                    <p onClick={handleCompletedToggle}><span>Completed: </span>Not Completed</p>
+                    <p onClick={handleCompletedToggle}><span>Completed: </span>Completed</p>
                 </>
                 :
                 null
             }
+
+            <button onClick={() => handleDelete(key)} style={deleteButton}>DELETE</button>
 
         </div>
     )

@@ -7,7 +7,7 @@ function Navbar (props) {
     return (
         <div className="main">
             <Link className="linkGridOne" to="/tickets"><span className="linkTextOne">Tickets</span></Link>
-            <Link className="linkGridTwo" to="/profile"><span className="linkTextTwo">Profile</span></Link>
+            <Link className="linkGridTwo" to="/CompletedTickets"><span className="linkTextTwo">Completed Tickets</span></Link>
             <button className="button"  onClick={props.logout}>Logout</button>
         </div>
     )

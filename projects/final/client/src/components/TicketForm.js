@@ -6,7 +6,7 @@ function TicketForm(props){
         <div>
             <form onSubmit={handleSubmit}>
                 <input onChange={handleChange} type="text" name="company" value={company} placeholder="Company"/>
-                <input onChange={handleChange} type="text" name="problem" value={problem} placeholder="Issue"/>
+                <textarea onChange={handleChange} type="text" name="problem" value={problem} placeholder="Issue"/>
                 <select onChange={handleChange} type="text" name="severity" placeholder="Severity">
                     <option value="Low">Low</option>
                     <option value="Medium">Medium</option>

@@ -23,6 +23,19 @@ ticketRouter.get("/user", (req, res, next) => {
     })
 })
 
+ticketRouter.delete("/:_id", (req, res, next) => {
+    Ticket.findOneAndDelete(
+        {_id: req.params._id},
+        (err, ticket) => {
+            if(err){
+                res.status(500)
+                return next(err)
+            }
+            return res.status(200).send(ticket)
+        }
+    )
+})
+
 ticketRouter.post("/", (req, res, next) => {
     req.body.owner = req.user._id
     const newTicket = new Ticket(req.body)

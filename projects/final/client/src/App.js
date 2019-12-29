@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import Auth from './components/Auth'
 import Tickets from './components/Tickets'
-import Profile from './components/Profile'
+import CompletedTickets from './components/CompletedTickets'
 import Navbar from './components/Navbar'
 import NewTicket from './components/NewTicket'
 import ProtectedRoute from './shared/ProtectedRoute'
@@ -18,7 +18,7 @@ function App() {
       <Switch>
         <Route exact path="/" render={rProps => token ? <Redirect to='/tickets'/> : <Auth {...rProps} />} />
         <ProtectedRoute path="/Tickets" component={Tickets} redirectTo="/" />
-        <ProtectedRoute path="/Profile" component={Profile} redirectTo="/" />
+        <ProtectedRoute path="/CompletedTickets" component={CompletedTickets} redirectTo="/" />
         <ProtectedRoute path="/NewTicket" component={NewTicket} redirectTo="/" />
       </Switch>
 
