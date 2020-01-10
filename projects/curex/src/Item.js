@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 function Item(props) {
 
@@ -48,7 +49,7 @@ function Item(props) {
 
                 <div className="pl-5">
 
-                    {/* <button className="rounded bg-red-700 px-2 py-2">Favorite</button> */}
+                <Link to={`/Currency/${props.link}`}><button className="rounded bg-orange-500 px-2 py-2">More Info</button></Link>
 
                 </div>
         </div>
