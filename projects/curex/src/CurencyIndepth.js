@@ -10,18 +10,20 @@ class CurencyIndepth extends Component {
 
         this.state = {
             historicalRates: [],
-            base: ""
+            symbols: []
         }
     }
 
     componentDidMount() {
-        axios.get("https://api.exchangeratesapi.io/history?start_at=1999-01-01&end_at=2019-12-31&base=USD&symbols=CAD").then(res => {
-            const historical = []
+        this.setState({symbols: this.props.match.params.CurencyId.split("-")[0]})
+        // console.log(this.state.symbols.length)
+        axios.get(`https://api.exchangeratesapi.io/history?start_at=1999-01-01&end_at=2019-12-31&base=${this.props.match.params.CurencyId.split("-")[0]}&symbols=${this.props.match.params.CurencyId.split("-")[1]}`).then(res => {
+        console.log("Inside Axios")    
+        const historical = []
             for (let key in res.data.rates){
-                historical.push({x: new Date(key), y: Math.round(res.data.rates[key]["CAD"] * 100) /100})
+                historical.push({x: new Date(key), y: Math.round(res.data.rates[key][this.props.match.params.CurencyId.split("-")[1]] * 100) /100})
             }
             this.setState({historicalRates: historical})
-            this.setState({base: res.data.base})
         })
     }
 
@@ -39,14 +41,10 @@ class CurencyIndepth extends Component {
         })
         let mappedRates = sortedDates.map(( rate, index ) => (<p key={index}>Date: {rate.date}</p>))
         // console.log(mappedRates)
-        console.log(sortedDates)
+        // console.log(this.props.match.params.CurencyId.split("-")[1])
         return (
             <div>
-                {/* {sortedDates.length ?
-                    sortedDates.map((day, index) => <h4 key={index}>{day.day}: {day.rate}</h4>)
-                :
-                    <h2>Loading...</h2>
-                } */}
+                <h1 className="text-xl" >{this.props.match.params.CurencyId.split("-")[0]} -> {this.props.match.params.CurencyId.split("-")[1]}: Historical Data</h1>
                 <HistoricalGraph data={sortedDates}/>
             </div>
         );

@@ -12,17 +12,12 @@ class HistoricalGraph extends Component {
     
     render() {
         let data = this.props.data
-        console.log(data)
         return (
             <div>
                 <VictoryChart scale={{x: "time"}} containerComponent={<VictoryZoomContainer/>}>
                 <VictoryAxis />
                 <VictoryAxis dependentAxis tickFormat={(tick) => `$${tick}`}/>
                     <VictoryLine
-                    animate={{
-                        duration: 2000,
-                        easing: "bounce"
-                    }}
                     data={[...data]}
                     />
 
