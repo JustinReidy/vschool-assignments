@@ -21,20 +21,8 @@ class ItemContainer extends Component {
     
     
     componentDidMount() {
-        // console.log(this.props)
         {this.props.handleAxios()}
     }
-    
-    // componentDidUpdate() {
-    //     axios.get('https://api.exchangeratesapi.io/latest?base=' + this.props.baseVal).then(res => {
-    //         const rates = []
-    //         for(let key in res.data.rates){
-    //             rates.push({[key]: res.data.rates[key]})    
-    //         }
-    //         this.setState({base: res.data.base, date: res.data.date, rates})
-    //     })
-    //     console.log(this.state.count++)
-    // }
     
     
 

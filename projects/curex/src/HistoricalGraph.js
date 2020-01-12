@@ -6,7 +6,7 @@ class HistoricalGraph extends Component {
         super(props)
 
         this.state = {
-            // data: []
+            
         }
     }    
     
