@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import axios from 'axios'
 import {withData} from './MyProvider'
 
 import Item from './Item'
@@ -21,7 +20,7 @@ class ItemContainer extends Component {
     
     
     componentDidMount() {
-        {this.props.handleAxios()}
+        this.props.handleAxios()
     }
     
     
