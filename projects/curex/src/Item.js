@@ -48,8 +48,11 @@ function Item(props) {
 
 
                 <div className="pl-5">
-
-                <Link to={`/Currency/${props.link}`}><button className="rounded bg-orange-500 px-2 py-2">More Info</button></Link>
+                {Object.keys(props.rate)[0] !== "ISK" ?
+                    <Link to={`/Currency/${props.link}`}><button className="rounded bg-orange-500 px-2 py-2">Data</button></Link>
+                :
+                    <h1>No Historical Data</h1>
+                }
 
                 </div>
         </div>
