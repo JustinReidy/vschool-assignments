@@ -11,7 +11,7 @@
     "mongodb": "^3.3.4",
     "mongoose": "^5.7.12",
     "mongoose-legacy-pluralize": "^1.0.2",
-    "mpath": "^0.6.0",
+    "mpath": "^0.8.4",
     "regexp-clone": "^1.0.0",
     "require_optional": "^1.0.1",
     "resolve-from": "^2.0.0",
